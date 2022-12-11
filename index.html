@@ -6,6 +6,16 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="./js/backtotop/jquery.back-to-top.css">
+    <script src="./js/script.js"></script>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"
+        integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <script src="./js/backtotop/jquery.back-to-top.js"></script>
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
+        integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+
     <title>Cultivate Arts - Home</title>
 </head>
 
@@ -13,45 +23,151 @@
     <header>
         <nav id="nav-container">
             <ul class="nav-list">
-                <li class="nav-item"><a href="#" class="nav-link">Home</a></li>
-                <li class="nav-item"><a href="#" class="nav-link">About</a></li>
-                <li class="nav-item"><a href="#" class="nav-link">Contact</a></li>
-                <li class="nav-item"><a href="#" class="nav-link">Events</a></li>
+                <li class="nav-item"><a href="./index.html" class="nav-link">Home</a></li>
+                <li class="nav-item"><a href="https://github.com" class="nav-link">About</a></li>
+                <li class="nav-item">
+                    <div class="nav-logo-container">
+                        <img src="./images/navlogo.png" alt="Cultivate Arts" class='nav-logo'></img>
+                    </div>
+                </li>
+                <li class="nav-item"><a href="./gallary.html" class="nav-link">Gallery</a></li>
+                <li class="nav-item"><a href="https://github.com" class="nav-link">Contact</a></li>
             </ul>
         </nav>
     </header>
 
-    <div class="content-container">
+    <a href="#" class="bck"></a>
+    <script>
 
-        <div id="welcome-box" class="welcome-box-container">
+        $(function () {
+
+
+            $('.bck').backToTop({
+                iconName: 'fas fa-arrow-up',
+                fxName: 'rightToLeft'
+            });
+
+        });
+
+    </script>
+
+    <!-- GREEN WELCOME BOX -->
+
+    <div id="welcome-box" class="welcome-box-container sep-margin">
+        <div class="welcome-box-content-container">
             <div class="welcome-text-container">
-                <h1>Welcome to <br> Cultivate Arts</h1>
+                <h1>Welcome to <br /> Cultivate Arts</h1>
                 <h3>A showcase of handmade gifts and products</h3>
-                <button id="welcome-button">
+                <button type="button" id="welcome-button">
                     Let's get started
                 </button>
             </div>
-            <div id="yellow-box"></div>
-            <div id="dark-green-box"></div>
-        </div>
-
-        <div id="whats-new" class="whats-new-container">
-            <div class="left-line"></div>
-            <div class="right-line"></div>
-            <h2>What's new in store</h2>
-
-            <div class="featured-items-container">
-                <div class="featured-item-card">
-                </div>
-                <div class="featured-item-card item2">
-                </div>
-                <div class="featured-item-card item3">
-                </div>
-
+            <div class="boxes-container">
+                <div id="yellow-box"></div>
+                <div id="dark-green-box"></div>
             </div>
 
         </div>
     </div>
+
+    <!-- WHATS NEW / FEATURED ITEMS -->
+
+    <div id="whats-new" class="whats-new-container sep-margin">
+        <div class="whats-new-content-container">
+            <div class="whats-new-title">
+                <div class="left-line"></div>
+                <div class="whats-new-text">
+                    <h2>What's new in store</h2>
+                </div>
+                <div class="right-line"></div>
+            </div>
+
+            <div class="featured-items-container">
+                <div class="featured-item-card">
+                    <div class="featured-img">
+                        <img src="./images/317052848_523985909788749_1734868901847570596_n.jpg" alt="featured item">
+                    </div>
+                    <div class=" featured-backing">
+                    </div>
+                </div>
+                <div class="featured-item-card">
+                    <div class="featured-img">
+                        <img src="./images/318208183_1569074693533016_6120038406039452861_n.jpg" alt="featured item">
+                    </div>
+                    <div class="featured-backing"></div>
+                </div>
+                <div class="featured-item-card">
+                    <div class="featured-img">
+                        <img src="./images/317841761_2246425578869596_7970363144033728300_n.jpg" alt="featured item">
+                    </div>
+                    <div class="featured-backing"></div>
+                </div>
+            </div>
+
+            <button type="button" class="gallery-button">See Full Gallary </button>
+        </div>
+        <div id="devider"></div>
+    </div>
+
+    <!-- ABOUT US -->
+
+    <div id="about" class="about-container">
+        <div class="about-content-container">
+            <div class="about-text-container">
+                <h1 class="about-title">About Us</h1>
+                <p>
+                    We are a local handmade Artisan boutique, located in Clawson, Michigan. We have over 80 artists
+                    that we work with to
+                    provide a wide variety of gifts, decor, and more!
+                </p>
+                <p>
+                    We provide retail space where makers and artists can showcase their handmade gifts and products
+                    and create a community to share knowledge and passions.
+                </p>
+            </div>
+            <div class="storefront-container">
+                <img src="./images/storefront.png" alt="Cultivate Arts Storefront" class="storefront-img">
+            </div>
+
+        </div>
+    </div>
+
+    <div class="events-cal">
+        <div class="events-container">
+            <h1>Upcoming Events</h1>
+            <iframe
+                src="https://calendar.google.com/calendar/embed?height=600&wkst=1&bgcolor=%239ada97&ctz=America%2FNew_York&showTitle=0&showNav=0&showPrint=0&showTabs=0&showCalendars=0&src=ZWQzZmIxNjI0ZDcyNzIyYTIyYWIwYjM1NDExNGE5M2FlMThkZWU3Mjc3YTlkYzNjZjQ5NDZjZDg0YzkwMjYyMkBncm91cC5jYWxlbmRhci5nb29nbGUuY29t&color=%23795548"
+                style="border-width:0" width="800" height="600" frameborder="0" scrolling="no" class="cal">
+            </iframe>
+        </div>
+
+
+
+    </div>
+
+
+
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="footer-content-container">
+            <p class="copyright"> &copy;
+                <script>document.write(new Date().getFullYear())</script> Cultivate Arts
+            </p>
+            <ul class="footer-nav">
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="./about.html">About</a></li>
+                <li><a href="./gallary.html">Gallery</a></li>
+                <li><a href="https://github.com">Contact</a></li>
+            </ul>
+        </div>
+
+
+    </footer>
+    </div>
+
+
+
 
 
 
