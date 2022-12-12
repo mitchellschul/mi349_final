@@ -296,13 +296,22 @@ nav{
 
 /* FOOTER */
 
-footer{
-    position: absolute;
+#index-footer{
+    /* position: fixed; */
     background: #9ADA97;
     height: auto;
     width: 100%;
     color: #242424;
-    /* bottom: 0; */
+    bottom: 0;
+}
+
+#other-footer{
+    position: fixed;
+    background: #9ADA97;
+    height: auto;
+    width: 100%;
+    color: #242424;
+    bottom: 0;
 
     /* display: flex; */
 }
@@ -367,6 +376,163 @@ footer{
  }
 
 
+ #vendor-contact{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 40px;
+    
+ }
+
+
+.vendor-joinus-container{
+    border: 2px solid #242424;
+    border-radius: 10px;
+    margin: 0 auto;
+    padding: 10px 20px;
+    max-width: 70%;
+    background-color: #eee;
+    filter: drop-shadow(16px 16px 10px rgb(174, 174, 174));
+    
+}
+
+
+ input[type=text],
+select,
+textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #242424;
+  background-color: #eee;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 8px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+input[type=submit] {
+  background-color: #9ADA97;
+  color: #242424;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 7px;
+  cursor: pointer;
+  margin-left: 130px;
+}
+input[type=submit]:hover {
+  background-color: #6ac965;
+  scale: 105%;
+  transition: 1s;
+}
+
+
+
+.vendor-contact-container{
+    border: 2px solid #242424;
+    border-radius: 10px;
+    margin: 0 auto;
+    padding: 10px 20px;
+    max-width: 70%;
+    background-color: #eee;
+    filter: drop-shadow(16px 16px 10px rgb(174, 174, 174));
+    
+}
+
+  
+  #contact {
+    width: 100%;
+    height: 100%;
+  }
+  
+  .section-header {
+    text-align: center;
+    margin: 0 auto;
+    padding: 40px 0;
+    color: #242424
+  }
+  
+  .contact-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 0 auto;
+    padding: 20px;
+    position: relative;
+    max-width: 840px;
+  }
+  
+  /* Left contact page */
+  .form-horizontal {
+    /*float: left;*/
+    max-width: 400px;
+    font-family: 'Lato';
+    font-weight: 400;
+  }
+  
+  .form-control, 
+  textarea {
+    max-width: 400px;
+    /* background-color: #000; */
+    color: #242424;
+    letter-spacing: 1px;
+  }
+  
+  .send-button {
+    margin-top: 15px;
+    height: 34px;
+    width: 400px;
+    overflow: hidden;
+    transition: all .2s ease-in-out;
+  }
+  
+
+  
+  /* Location, Phone, Email Section */
+  .contact-list {
+    list-style-type: none;
+    margin-left: -10px;
+    padding-right: 20px;
+  }
+  
+  .list-item {
+    line-height: 4;
+    color: #9ADA97;
+  }
+  
+  .contact-text {
+    font: 300 18px 'Lato', sans-serif;
+    letter-spacing: 1.9px;
+    color: #242424;
+  }
+  
+  .place {
+    margin-left: 62px;
+  }
+  
+  .phone {
+    margin-left: 56px;
+  }
+  
+  .gmail {
+    margin-left: 53px;
+  }
+  
+  .contact-text a {
+    color: #242424;
+    text-decoration: none;
+    transition-duration: 0.2s;
+  }
+  
+  /* .contact-text a:hover {
+    color: #fff;
+    text-decoration: none;
+  } */
+  
+  
+  /* Begin Media Queries*/
+  
+
+
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 450px) {
 
@@ -378,6 +544,10 @@ footer{
 
     .nav-logo{
         width: 100%;
+    }
+
+    .nav-logo-container{
+        width: 170px;
     }
 
     .sep-margin{
@@ -488,6 +658,27 @@ footer{
         position: sticky;
 
     }
+
+    .contact-wrapper{
+        flex-direction: column;
+    }
     
+    .place{
+        margin-left: 20px;
+    }
+    .gmail{
+        margin-left: 20px;
+    }
+    .phone{
+        margin-left: 20px;
+    }
+
+    #contact-send-button{
+        margin-left: 35%;
+    }
+
+    #vendor-contact p{
+        margin: 20px;
+    }
 }
 

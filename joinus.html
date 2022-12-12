@@ -6,11 +6,25 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/styles.css">
-    <title>Cultivate Arts - gallary</title>
+    <link rel="stylesheet" href="./js/backtotop/jquery.back-to-top.css">
+    <script src="./js/script.js"></script>
 
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"
+        integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <script src="./js/backtotop/jquery.back-to-top.js"></script>
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
+        integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+
+    <title>Cultivate Arts - Home</title>
 </head>
 
 <body>
+
+
+    <!-- FOOTER -->
+
+
     <header>
         <nav id="nav-container">
             <ul class="nav-list">
@@ -26,30 +40,28 @@
             </ul>
         </nav>
     </header>
-    <!-- IMAGE GALLERY -->
-    <div id="gallery">
-        <div class="gallery-container">
-            <img src="./images/1.jpg" alt="Product Image">
-            <img src="./images/2.jpg" alt="Product Image">
-            <img src="./images/3.jpg" alt="Product Image">
-            <img src="./images/4.jpg" alt="Product Image">
-            <img src="./images/5.jpg" alt="Product Image">
-            <img src="./images/6.jpg" alt="Product Image">
-            <img src="./images/7.jpg" alt="Product Image">
-            <img src="./images/8.jpg" alt="Product Image">
-            <img src="./images/9.jpg" alt="Product Image">
-            <img src="./images/10.jpg" alt="Product Image">
-            <img src="./images/11.jpg" alt="Product Image">
-            <img src="./images/12.jpg" alt="Product Image">
-            <img src="./images/13.jpg" alt="Product Image">
-            <img src="./images/14.jpg" alt="Product Image">
-            <img src="./images/15.jpg" alt="Product Image">
-            <img src="./images/16.jpg" alt="Product Image">
 
+    <div id="joinus">
+
+        <div id="vendor-contact">
+            <h2>Join Us</h2>
+            <p>Join Cultivate Arts by filling out the form below. Our team will reach out shortly.</p>
+            <div class="vendor-joinus-container">
+                <form action="/form/submit" method="POST">
+                    <input type="text" id="fname" name="name" placeholder="Name *" required>
+                    <input type="text" id="mail" name="e-mail" placeholder="E-mail *" required>
+                    <textarea id="message" name="message" placeholder="What do you make? *"
+                        style="height: 200px"></textarea>
+                    <label class="upload-text" for="myFile">Upload your work</label>
+                    <input type="file" id="myFile" name="filename">
+                    <input type="submit" value="Send">
+
+
+                </form>
+            </div>
         </div>
     </div>
 
-    <!-- FOOTER -->
     <footer id="other-footer">
 
         <div class="footer-content-container">
@@ -66,8 +78,6 @@
 
 
     </footer>
-
-
 </body>
 
 </html>

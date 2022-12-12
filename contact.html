@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="./js/backtotop/jquery.back-to-top.css">
+    <script src="./js/script.js"></script>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"
+        integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <script src="./js/backtotop/jquery.back-to-top.js"></script>
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
+        integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+
+    <title>Cultivate Arts - Home</title>
+</head>
+
+<body>
+
+    <header>
+        <nav id="nav-container">
+            <ul class="nav-list">
+                <li class="nav-item"><a href="./index.html" class="nav-link">Home</a></li>
+                <li class="nav-item"><a href="./contact.html" class="nav-link">Contact</a></li>
+                <li class="nav-item">
+                    <div class="nav-logo-container">
+                        <img src="./images/navlogo.png" alt="Cultivate Arts" class='nav-logo'>
+                    </div>
+                </li>
+                <li class="nav-item"><a href="./gallery.html" class="nav-link">Gallery</a></li>
+                <li class="nav-item"><a href="./joinus.html" class="nav-link">Join Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="contact">
+
+        <h1 class="section-header">Contact Cultivate Arts</h1>
+
+        <div class="contact-wrapper">
+
+            <div class="vendor-contact-container">
+                <form action="/form/submit" method="POST">
+                    <input type="text" id="fname" name="name" placeholder="Name *" required>
+                    <input type="text" id="mail" name="e-mail" placeholder="E-mail *" required>
+                    <textarea id="message" name="message" placeholder="Your message *" style="height: 200px"></textarea>
+                    <input type="submit" value="Send" id="contact-send-button">
+                </form>
+            </div>
+
+            <div class="direct-contact-container">
+                <ul class="contact-list">
+                    <li class="list-item"><i class="fa fa-map-marker fa-2x"><span class="contact-text place">808 w. 14
+                                Mile Rd Clawson, MI 48017</span></i></li>
+
+                    <li class="list-item"><i class="fa fa-phone fa-2x"><span class="contact-text phone"><a
+                                    href="tel:1-212-555-5555" title="Give me a call">(248) 850-8330</a></span></i></li>
+
+                    <li class="list-item"><i class="fa fa-envelope fa-2x"><span class="contact-text gmail"><a
+                                    href="mailto:#"
+                                    title="Send me an email">cultivatearts.clawson@gmail.com</a></span></i></li>
+
+                </ul>
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <footer id="other-footer">
+
+        <div class="footer-content-container">
+            <p class="copyright"> &copy;
+                <script>document.write(new Date().getFullYear())</script> Cultivate Arts
+            </p>
+            <ul class="footer-nav">
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="./contact.html">Contact</a></li>
+                <li><a href="./gallary.html">Gallery</a></li>
+                <li><a href="./joinus.html">Join Us</a></li>
+            </ul>
+        </div>
+
+
+    </footer>
+</body>
+
+</html>
